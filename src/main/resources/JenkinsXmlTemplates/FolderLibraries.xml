@@ -1,0 +1,25 @@
+<org.jenkinsci.plugins.workflow.libs.FolderLibraries plugin="workflow-cps-global-lib@581.ve633085a_8a_87">
+    <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+            <name>${libraryName}</name>
+            <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
+                <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@4.11.3">
+                    <id>${libraryId}</id>
+                    <remote>${libraryGitUrl}</remote>
+                    <credentialsId>${libraryGitCredentialsId}</credentialsId>
+                    <traits>
+                        <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+                    </traits>
+                </scm>
+            </retriever>
+            <defaultVersion>${libraryDefaultVersion}</defaultVersion>
+            <implicit>false</implicit>
+            <allowVersionOverride>true</allowVersionOverride>
+            <includeInChangesets>true</includeInChangesets>
+            <cachingConfiguration>
+                <refreshTimeMinutes>${libraryCacheRefreshTimeMinutes}</refreshTimeMinutes>
+                <excludedVersionsStr/>
+            </cachingConfiguration>
+        </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+    </libraries>
+</org.jenkinsci.plugins.workflow.libs.FolderLibraries>

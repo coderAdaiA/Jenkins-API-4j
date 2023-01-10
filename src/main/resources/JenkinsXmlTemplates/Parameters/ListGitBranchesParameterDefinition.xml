@@ -1,0 +1,16 @@
+<com.syhuang.hudson.plugins.listgitbranchesparameter.ListGitBranchesParameterDefinition
+        plugin="list-git-branches-parameter@0.0.11">
+    <name>${name}</name>
+    <description>${description}</description>
+    <uuid>${uuid}</uuid>
+    <remoteURL>${remoteURL}</remoteURL>
+    <credentialsId>${credentialsId}</credentialsId>
+    <defaultValue>${defaultValue}</defaultValue>
+    <type>PT_BRANCH_TAG</type><!-- PT_BRANCH || PT_BRANCH_TAG -->
+    <tagFilter>*</tagFilter>
+    <branchFilter>.*</branchFilter>
+    <sortMode>ASCENDING_SMART</sortMode>
+    <selectedValue>NONE</selectedValue>
+    <quickFilterEnabled>${quickFilterEnabled}</quickFilterEnabled>
+    <listSize>${listSize}</listSize>
+</com.syhuang.hudson.plugins.listgitbranchesparameter.ListGitBranchesParameterDefinition>

@@ -1,0 +1,7 @@
+<hudson.model.ChoiceParameterDefinition>
+    <name>${name}</name>
+    <description>${description}</description>
+    <choices>
+        ${choices}
+    </choices>
+</hudson.model.ChoiceParameterDefinition>

@@ -1,0 +1,5 @@
+<com.wangyin.parameter.WHideParameterDefinition plugin="hidden-parameter@0.0.5">
+    <name>${name}</name>
+    <description>${description}</description>
+    <defaultValue>${defaultValue}</defaultValue>
+</com.wangyin.parameter.WHideParameterDefinition>
